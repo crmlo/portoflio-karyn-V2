@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import React from "react";
 
 export function Header44() {
@@ -20,16 +19,6 @@ export function Header44() {
             through it all in live presentations. If this sparked your interest,
             I'd love to walk you through it.
           </p>
-          <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <a href="https://wa.me/5519987653205" target="_blank" rel="noopener noreferrer">
-              <Button title="WhatsApp">WhatsApp</Button>
-            </a>
-            <a href="mailto:karyn.loreyne@gmail.com">
-              <Button title="Email" variant="secondary">
-                Email
-              </Button>
-            </a>
-          </div>
         </div>
       </div>
     </section>

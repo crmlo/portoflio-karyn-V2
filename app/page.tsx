@@ -5,9 +5,9 @@ import { Header64 } from "./components/home/Header64";
 import { Layout262 } from "./components/home/Layout262";
 import { Logo3 } from "./components/home/Logo3";
 import { Portfolio16 } from "./components/home/Portfolio16";
-import { CtaBanner } from "./components/home/CtaBanner";
 import { Testimonials } from "./components/home/Testimonials";
-import { Contact15 } from "./components/home/Contact15";
+import { CtaBanner } from "./components/home/CtaBanner";
+import { Footer } from "./components/shared/Footer";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <Portfolio16 />
         <Testimonials />
         <CtaBanner />
-        <Contact15 />
+        <Footer />
       </main>
     </>
   );

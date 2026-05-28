@@ -16,6 +16,7 @@ import { Layout65_1 } from "./components/Layout65_1";
 import { Stats17 } from "./components/Stats17";
 import { Testimonial1 } from "./components/Testimonial1";
 import { Header44 } from "./components/Header44";
+import { Footer } from "../../components/shared/Footer";
 
 export default function NiloChatPage() {
   return (
@@ -38,6 +39,7 @@ export default function NiloChatPage() {
       <Stats17 />
       <Testimonial1 />
       <Header44 />
+      <Footer />
     </>
   );
 }
