@@ -1,7 +1,5 @@
+import { redirect } from 'next/navigation'
+
 export default function Home() {
-  return (
-    <main>
-      <h1>Karyn Loreyne</h1>
-    </main>
-  );
+  redirect('/work/nilo-chat')
 }
