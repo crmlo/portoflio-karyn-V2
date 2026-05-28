@@ -10,7 +10,7 @@ export function Header1() {
         <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16 lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl">
-              I design products that solve hard problems, and actually work.
+              I'm Karyn, and I design products that solve hard problems and actually work.
             </h1>
             <p className="md:text-md">
               I'm a designer with fourteen years of experience, eight of them
