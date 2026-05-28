@@ -25,6 +25,7 @@ export function Layout1_1() {
               width={800}
               height={600}
               className="w-full h-auto rounded-2xl"
+              quality={90}
             />
           </div>
         </div>

@@ -30,6 +30,7 @@ export function Layout149_2() {
             width={1600}
             height={900}
             className="w-full h-auto rounded-2xl"
+            quality={90}
           />
         </div>
       </div>
