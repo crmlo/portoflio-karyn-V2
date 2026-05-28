@@ -10,7 +10,7 @@ export function CtaBanner() {
           Let's make something great together
         </h2>
         <p className="md:text-md">
-          I'm open to new opportunities — full-time, contract, or just a good
+          I'm open to new opportunities, full-time, contract, or just a good
           conversation about what's next.
         </p>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { BiEnvelope, BiMap, BiPhone } from "react-icons/bi";
+import { BiEnvelope, BiLogoLinkedin, BiPhone } from "react-icons/bi";
 
 export function Contact15() {
   return (
@@ -14,8 +14,8 @@ export function Contact15() {
               Let's talk
             </h2>
             <p className="md:text-md">
-              I'm open to full-time roles, contract work, or a conversation
-              about what's next.
+              I respond to every message, whether it's about a role, a project,
+              or just a conversation about design.
             </p>
           </div>
           <div className="flex flex-col">
@@ -26,7 +26,9 @@ export function Contact15() {
                 </div>
                 <div>
                   <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">Email</h3>
-                  <a className="underline" href="#">hello@relume.io</a>
+                  <a className="underline" href="mailto:karyn.loreyne@gmail.com">
+                    karyn.loreyne@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="flex flex-row">
@@ -35,16 +37,25 @@ export function Contact15() {
                 </div>
                 <div>
                   <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">WhatsApp</h3>
-                  <a className="underline" href="#">wa.me/5519987653205</a>
+                  <a className="underline" href="https://wa.me/5519987653205">
+                    wa.me/5519987653205
+                  </a>
                 </div>
               </div>
               <div className="flex flex-row">
                 <div className="mr-4 md:mb-4">
-                  <BiMap className="size-6" />
+                  <BiLogoLinkedin className="size-6" />
                 </div>
                 <div>
                   <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">LinkedIn</h3>
-                  <p>linkedin.com/in/karynloreyne</p>
+                  <a
+                    className="underline"
+                    href="https://linkedin.com/in/karynloreyne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    linkedin.com/in/karynloreyne
+                  </a>
                 </div>
               </div>
             </div>
