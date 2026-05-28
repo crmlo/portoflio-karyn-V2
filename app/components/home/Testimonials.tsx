@@ -14,7 +14,7 @@ const testimonials = [
     quote:
       "Working with Karyn on complex oncological care journeys, I was consistently impressed by how quickly she grasped the clinical nuances and translated them into design solutions that actually made sense for the real workflows we were mapping together.",
     author: "Marcos Adriano Jota",
-    context: "Diretor Nacional, Sociedade Brasileira de Cirurgia Oncológica · Advisor, Nilo",
+    context: "National Director, Brazilian Society of Surgical Oncology · Advisor, Nilo",
   },
   {
     quote:
@@ -36,16 +36,18 @@ const testimonials = [
   },
 ];
 
-export function Testimonials() {
-  const [current, setCurrent] = useState(0);
-  const total = testimonials.length;
+const ITEMS_PER_PAGE = 2;
+const totalPages = Math.ceil(testimonials.length / ITEMS_PER_PAGE);
 
-  const prev = () => setCurrent((c) => (c - 1 + total) % total);
-  const next = () => setCurrent((c) => (c + 1) % total);
+export function Testimonials() {
+  const [page, setPage] = useState(0);
+
+  const prev = () => setPage((p) => (p - 1 + totalPages) % totalPages);
+  const next = () => setPage((p) => (p + 1) % totalPages);
 
   const visible = [
-    testimonials[current % total],
-    testimonials[(current + 1) % total],
+    testimonials[(page * ITEMS_PER_PAGE) % testimonials.length],
+    testimonials[(page * ITEMS_PER_PAGE + 1) % testimonials.length],
   ];
 
   return (
@@ -56,14 +58,15 @@ export function Testimonials() {
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
             What they say about working with me.
           </h2>
-          <p className="md:text-md">
-            Straight from the people I've built with.
-          </p>
+          <p className="md:text-md">Straight from the people I've built with.</p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12">
           {visible.map((t, i) => (
-            <div key={i} className="flex flex-col border border-border-primary p-8 md:p-10">
+            <div
+              key={i}
+              className="flex min-h-[320px] flex-col border border-border-primary p-8 md:p-10"
+            >
               <blockquote className="flex-1 text-md font-bold leading-[1.4]">
                 "{t.quote}"
               </blockquote>
@@ -77,13 +80,13 @@ export function Testimonials() {
 
         <div className="mt-8 flex items-center justify-between md:mt-10">
           <div className="flex gap-2">
-            {Array.from({ length: total }).map((_, i) => (
+            {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
-                onClick={() => setCurrent(i)}
-                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => setPage(i)}
+                aria-label={`Go to page ${i + 1}`}
                 className={`h-2 w-2 rounded-full transition-colors ${
-                  i === current ? "bg-black" : "bg-neutral-300"
+                  i === page ? "bg-black" : "bg-neutral-300"
                 }`}
               />
             ))}
