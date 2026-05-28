@@ -11,11 +11,10 @@ export function Contact15() {
           <div className="rb-12 max-w-lg">
             <p className="mb-3 font-semibold md:mb-4">Reach out</p>
             <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Let's talk
+              Get in touch
             </h2>
             <p className="md:text-md">
-              I respond to every message, whether it's about a role, a project,
-              or just a conversation about design.
+              I respond to every message.
             </p>
           </div>
           <div className="flex flex-col">
