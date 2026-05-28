@@ -10,6 +10,7 @@ const logos = [
   { src: "/images/Shell.png", alt: "Shell" },
   { src: "/images/Raizen.png", alt: "Raízen" },
   { src: "/images/Comgas.png", alt: "Comgás" },
+  { src: "/images/IBM.png", alt: "IBM" },
 ];
 
 export function Logo3() {
