@@ -6,21 +6,33 @@ import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 const testimonials = [
   {
     quote:
-      "We're flagging errors to help the agent improve, but please don't turn it off — it's already making our work so much easier.",
-    author: "Nursing team, Grupo Fleury",
-    context: "Weeks after launch",
+      "Karyn is the designer who genuinely cares about the user. Her work is guided by real needs and oriented to the final user, with latent concern in delivering the best real experience and impact. She conducts tests, surveys, interviews, and brings a lot of inputs for the team.",
+    author: "Eduardo Duccigne",
+    context: "Design Manager, Nilo",
   },
   {
     quote:
-      "Karyn has a rare ability to translate complexity into clarity. She held the vision across the whole project and made sure everyone — from engineers to execs — stayed aligned.",
-    author: "Product Lead",
-    context: "Nilo Health",
+      "Working with Karyn on complex oncological care journeys, I was consistently impressed by how quickly she grasped the clinical nuances and translated them into design solutions that actually made sense for the real workflows we were mapping together.",
+    author: "Marcos Adriano Jota",
+    context: "Diretor Nacional, Sociedade Brasileira de Cirurgia Oncológica · Advisor, Nilo",
   },
   {
     quote:
-      "What stood out was how fast she moved without cutting corners. We went from zero to a live product in four months, and the quality was there from day one.",
-    author: "Growth team",
-    context: "iFood",
+      "Karyn approaches every project with a level of thoroughness that's rare. Before a single screen gets designed, she's already mapped the user context, identified the edge cases, and thought through the copy and validation. That rigor carries all the way through to delivery — and it shows in the quality of what ships.",
+    author: "Sofia Oliveira",
+    context: "Product Manager, Nilo",
+  },
+  {
+    quote:
+      "Karyn's work is extremely well documented. You can look at the Figma file she creates and know exactly what happens in each situation. Each flow is very well described.",
+    author: "Lucas Gomide",
+    context: "Senior Software Engineer, Nilo",
+  },
+  {
+    quote:
+      "She showed a lot of interest in the Compass — a large and complex project. She was not afraid to face it head-on and organize complex co-creation sessions.",
+    author: "Rafael Alves",
+    context: "Head de Produto, Nilo",
   },
 ];
 
