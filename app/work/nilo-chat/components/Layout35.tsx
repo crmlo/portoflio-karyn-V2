@@ -17,8 +17,11 @@ export function Layout35() {
             aligned, clear strategic win for both product and client. With that
             secured, we moved into discovery to understand care coordinators'
             day-to-day workflows, map the agent's scenarios, and define how it
-            should operate. But what we found in the field changed everything.
-            Coordinators knew AI could transform the operation — but they needed
+            should operate.
+          </p>
+          <p className="mt-4 md:text-md">
+            But what we found in the field changed everything.
+            Coordinators knew AI could transform the operation but they needed
             confidence that the agent would be reliable and that they'd stay in
             control. And since they're accountable to healthcare operators,
             their buy-in wasn't optional. Without it, nothing goes live. If we
