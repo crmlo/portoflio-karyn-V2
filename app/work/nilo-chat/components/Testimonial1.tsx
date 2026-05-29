@@ -9,7 +9,7 @@ export function Testimonial1() {
         <div className="flex flex-col items-center text-center">
           <blockquote className="text-xl font-bold md:text-2xl">
             "We're flagging errors to help the agent improve, but please don't
-            turn it off — it's already making our work so much easier."
+            turn it off, it's already making our work so much easier."
           </blockquote>
           <div className="mt-6 flex flex-col items-center justify-center md:mt-8">
             <p className="font-semibold">Nursing team, Grupo Fleury</p>

@@ -19,7 +19,10 @@ export function Layout1() {
               operators deliver continuous, personalized care. With over 3
               million patients and 6,000 healthcare professionals on the
               platform, it serves clients like Grupo Fleury, Hospital Albert
-              Einstein, Unimed, and Porto Saúde. The platform has four modules:
+              Einstein, Unimed, and Porto Saúde.
+            </p>
+            <p className="mt-4 md:text-md">
+              The platform has four modules:
               acquisition & engagement, care navigation, data & analytics, and
               AI agents. Chat sits at the center of all of them — it's the
               interface through which millions of patients' health data flows
