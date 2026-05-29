@@ -61,11 +61,12 @@ export function Testimonials() {
           <p className="md:text-md">Straight from the people I've built with.</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12">
+        <div className="overflow-hidden">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12" style={{ minHeight: "400px" }}>
           {visible.map((t, i) => (
             <div
               key={i}
-              className="flex min-h-[320px] flex-col border border-border-primary p-8 md:p-10"
+              className="flex h-full flex-col border border-border-primary p-8 md:p-10" style={{ minHeight: "400px" }}
             >
               <blockquote className="flex-1 text-md font-bold leading-[1.4]">
                 "{t.quote}"
@@ -76,6 +77,7 @@ export function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
         </div>
 
         <div className="mt-8 flex items-center justify-between md:mt-10">
