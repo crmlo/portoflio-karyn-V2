@@ -62,11 +62,11 @@ export function Testimonials() {
         </div>
 
         <div className="overflow-hidden">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12" style={{ minHeight: "400px" }}>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12" style={{ minHeight: "350px" }}>
           {visible.map((t, i) => (
             <div
               key={i}
-              className="flex h-full flex-col border border-border-primary p-8 md:p-10" style={{ minHeight: "400px" }}
+              className="flex h-full flex-col border border-border-primary p-8 md:p-10" style={{ minHeight: "350px" }}
             >
               <blockquote className="flex-1 text-md font-bold leading-[1.4]">
                 "{t.quote}"
