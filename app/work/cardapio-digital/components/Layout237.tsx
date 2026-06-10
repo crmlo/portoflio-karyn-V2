@@ -5,7 +5,7 @@ import { CreditCard, QrCode, ShoppingBag } from "lucide-react";
 
 export function Layout237() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28" style={{ backgroundColor: "#F3F5FF" }}>
+    <section className="bg-white px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="rb-12 mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
