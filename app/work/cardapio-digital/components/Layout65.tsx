@@ -14,8 +14,8 @@ export function Layout65() {
               it wasn't working.
             </h2>
           </div>
-          <div>
-            <p className="mb-5 text-white/80 md:mb-6 md:text-md">
+          <div className="flex flex-col gap-4">
+            <p className="text-white/80 md:text-md">
               The launch happened on schedule. But three months in, the numbers
               were well below expectations. We had 12k active restaurants and
               172k orders placed, against a goal of 200k orders by that point,
@@ -23,6 +23,8 @@ export function Layout65() {
               to push harder: more calls to restaurants, more outreach, more
               follow-up. We spent about a month doing exactly that. It generated
               some data, but nothing deep enough to explain the real friction.
+            </p>
+            <p className="text-white/80 md:text-md">
               What we were missing wasn't effort. It was understanding. We
               didn't have a clear picture of who our restaurants actually were,
               how they operated outside iFood, whether they had understood what
