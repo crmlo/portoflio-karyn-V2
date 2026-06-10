@@ -13,8 +13,8 @@ export function Content17() {
             </h3>
           </div>
           <div>
-            <div className="prose prose-invert">
-              <p>
+            <div className="flex flex-col gap-4">
+              <p className="text-white/80 md:text-md">
                 I joined the project before launch and stayed through the growth
                 phase, which meant I was part of every major design decision
                 from the beginning. Pre-launch, that meant validating our
@@ -22,7 +22,7 @@ export function Content17() {
                 the research that diagnosed why the product wasn't growing and
                 designing the features that fixed it.
               </p>
-              <p>
+              <p className="text-white/80 md:text-md">
                 The project moved through three distinct phases: positioning
                 validation before launch, a deep discovery sprint when growth
                 stalled, and a full V2 redesign informed by what we found. Each
