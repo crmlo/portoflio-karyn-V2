@@ -14,19 +14,24 @@ export function Layout105() {
               Before we launched, we tested how to talk about it
             </h3>
           </div>
-          <div>
-            <p className="mb-5 md:mb-4 md:text-md">
+          <div className="flex flex-col gap-4">
+            <p className="md:text-md">
               One of the first questions we faced wasn't about the product
               itself, but it was about how to position it. We ran a fake door
               A/B test on the acquisition landing page to understand what would
-              drive restaurant sign-ups. Version A led with the product's free
-              nature: no fees, no commissions. Version B led with the pain it
-              solved: replacing the chaos of managing orders through WhatsApp
-              and phone. The results were close. A performed slightly better, so
-              we used it as the hero message. But the gap was narrow enough that
-              we didn't discard B — we kept its framing and wove it into the
-              rest of the page. Both angles were resonating. We just needed to
-              know which one to lead with.
+              drive restaurant sign-ups.
+            </p>
+            <p className="md:text-md">
+              Version A led with the product's free nature: no fees, no
+              commissions. Version B led with the pain it solved: replacing the
+              chaos of managing orders through WhatsApp and phone.
+            </p>
+            <p className="md:text-md">
+              The results were close. A performed slightly better, so we used it
+              as the hero message. But the gap was narrow enough that we didn't
+              discard B — we kept its framing and wove it into the rest of the
+              page. Both angles were resonating. We just needed to know which
+              one to lead with.
             </p>
           </div>
         </div>
