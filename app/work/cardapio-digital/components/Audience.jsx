@@ -1,12 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
-import { Store, Utensils } from "lucide-react";
 
-export function Layout518() {
+export function Layout254() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="mx-auto max-w-lg text-center">
@@ -25,7 +23,11 @@ export function Layout518() {
           <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <Store className="size-12" strokeWidth={1.5} />
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                  className="size-12"
+                  alt="Relume logo"
+                />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 iFood Partner Restaurants
@@ -37,19 +39,20 @@ export function Layout518() {
             </div>
           </div>
           <div className="relative order-last w-full sm:col-span-2 lg:order-none lg:col-span-1">
-            <Image
-              src="/images/App+Painel.png"
-              width={800}
-              height={600}
-              alt="Cardápio Digital app and partner panel"
-              className="h-auto w-full object-cover rounded-2xl"
-              quality={90}
+            <img
+              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              alt="Relume placeholder image"
+              className="h-auto w-full object-cover"
             />
           </div>
           <div className="grid w-full grid-cols-1 gap-x-20 gap-y-12 md:gap-y-16">
             <div className="flex flex-col items-center text-center">
               <div className="mb-5 md:mb-6">
-                <Utensils className="size-12" strokeWidth={1.5} />
+                <img
+                  src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
+                  className="size-12"
+                  alt="Relume logo"
+                />
               </div>
               <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">
                 Partner's Customers
@@ -61,6 +64,7 @@ export function Layout518() {
             </div>
           </div>
         </div>
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-4 md:mt-18 lg:mt-20" />
       </div>
     </section>
   );
