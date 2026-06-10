@@ -80,7 +80,7 @@ export function Portfolio16() {
                   <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">Growth</span>
                 </li>
                 <li className="flex">
-                  <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">PWA</span>
+                  <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">UX Research</span>
                 </li>
               </ul>
               <Button title="View" variant="link" size="link" iconRight={<RxChevronRight />} className="mt-6 md:mt-8" asChild>
