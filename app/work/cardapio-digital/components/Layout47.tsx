@@ -22,20 +22,21 @@ export function Layout47() {
             <div className="grid grid-cols-1 gap-x-6 gap-y-8 py-2 sm:grid-cols-2">
               <div>
                 <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">Qualitative</h6>
+                <p className="mb-3">22 interviews · 11 engaged, 11 disengaged.</p>
                 <p>
-                  22 interviews · 11 engaged, 11 disengaged. We talked to
-                  partners on both sides of the adoption gap to understand what
-                  motivated or blocked them. The goal was to find patterns, not
-                  just complaints.
+                  We talked to partners on both sides of the adoption gap to
+                  understand what motivated or blocked them. The goal was to
+                  find patterns, not just complaints.
                 </p>
               </div>
               <div>
                 <h6 className="mb-3 text-md font-bold leading-[1.4] md:mb-4 md:text-xl">Quantitative</h6>
+                <p className="mb-3">13,944 respondents.</p>
                 <p>
-                  13,944 respondents. Built directly from what the qualitative
-                  revealed. This is where we measured the real scale:
-                  comprehension gaps, behavior vs. perception, and which feature
-                  gaps were blocking adoption across the broader base.
+                  Built directly from what the qualitative revealed. This is
+                  where we measured the real scale: comprehension gaps, behavior
+                  vs. perception, and which feature gaps were blocking adoption
+                  across the broader base.
                 </p>
               </div>
             </div>
