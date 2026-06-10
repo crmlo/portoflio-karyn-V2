@@ -16,16 +16,20 @@ export function Layout105_2() {
             </h3>
           </div>
           <div>
-            <p className="mb-5 md:mb-4 md:text-md">
-              Each stage had edge cases that needed explicit design decisions:
-              what happens when the SMS code doesn't arrive, how to handle
-              customers who already have an iFood account, how to present
-              iFood's authentication environment without making the customer
-              feel like they're ordering through iFood. Getting that last part
-              right was particularly delicate: we needed the iFood
-              infrastructure to feel like a trust signal, not a source of
-              confusion.
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="md:text-md">
+                Each stage had edge cases that needed explicit design decisions:
+                what happens when the SMS code doesn't arrive, how to handle
+                customers who already have an iFood account, how to present
+                iFood's authentication environment without making the customer
+                feel like they're ordering through iFood.
+              </p>
+              <p className="md:text-md">
+                Getting that last part right was particularly delicate: we
+                needed the iFood infrastructure to feel like a trust signal,
+                not a source of confusion.
+              </p>
+            </div>
           </div>
         </div>
         <Image
