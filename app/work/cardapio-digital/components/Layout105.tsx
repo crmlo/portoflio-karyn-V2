@@ -31,7 +31,7 @@ export function Layout105() {
           </div>
         </div>
         <Image
-          src="/images/placeholder.jpg"
+          src="/images/A-B.png"
           width={1600}
           height={900}
           className="w-full h-auto rounded-2xl object-cover"

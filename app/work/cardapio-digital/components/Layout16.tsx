@@ -29,12 +29,13 @@ export function Layout16() {
           </div>
           <div>
             <Image
-              src="/images/placeholder.jpg"
+              src="/images/Guia.gif"
               width={800}
               height={600}
               className="w-full h-auto rounded-2xl object-cover"
               alt="Partner educational guide"
               quality={90}
+              unoptimized
             />
           </div>
         </div>

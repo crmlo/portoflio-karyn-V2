@@ -29,7 +29,7 @@ export function Layout105_1() {
           </div>
         </div>
         <Image
-          src="/images/placeholder.jpg"
+          src="/images/POL.png"
           width={1200}
           height={675}
           className="w-full object-cover rounded-2xl"

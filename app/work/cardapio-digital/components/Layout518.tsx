@@ -1,9 +1,9 @@
 "use client";
 
 import { useMediaQuery } from "@relume_io/relume-ui";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import React, { useRef } from "react";
-import { ShoppingCart, Store } from "lucide-react";
 
 interface ConditionalRenderProps {
   condition: boolean;
@@ -56,14 +56,16 @@ export function Layout518() {
             </h2>
           </div>
           <div className="absolute inset-0 -z-10">
-            <img src="/images/placeholder.jpg" className="size-full object-cover" alt="Audience background" />
+            <img src="/images/App+Painel.png" className="size-full object-cover" alt="Cardápio Digital app and panel" />
             <div className="absolute inset-0 bg-black/50" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-y-6 md:gap-y-8">
           <div className="flex border border-border-primary p-8 text-center">
             <div className="mx-auto flex max-w-md flex-col items-center justify-center">
-              <div className="mb-3 md:mb-4"><Store className="size-12" strokeWidth={1.5} /></div>
+              <div className="mb-4 w-full overflow-hidden rounded-2xl">
+                <Image src="/images/Parceiro.png" width={600} height={400} className="w-full h-auto object-cover" alt="iFood partner restaurant" quality={90} />
+              </div>
               <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl">
                 iFood Partner Restaurants
               </h3>
@@ -77,7 +79,9 @@ export function Layout518() {
           </div>
           <div className="flex border border-border-primary p-8 text-center">
             <div className="mx-auto flex max-w-md flex-col items-center justify-center">
-              <div className="mb-3 md:mb-4"><ShoppingCart className="size-12" strokeWidth={1.5} /></div>
+              <div className="mb-4 w-full overflow-hidden rounded-2xl">
+                <Image src="/images/Cliente.png" width={600} height={400} className="w-full h-auto object-cover" alt="End customer" quality={90} />
+              </div>
               <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl">
                 Partner's Customers
               </h3>
@@ -105,7 +109,7 @@ export function Layout518() {
                 </h2>
               </div>
               <div className="absolute inset-0 -z-10">
-                <img src="/images/placeholder.jpg" className="size-full object-cover" alt="Audience background" />
+                <img src="/images/App+Painel.png" className="size-full object-cover" alt="Cardápio Digital app and panel" />
                 <div className="absolute inset-0 bg-black/50" />
               </div>
             </motion.div>
@@ -118,7 +122,9 @@ export function Layout518() {
                 className="flex border border-border-primary p-8 text-center lg:max-w-[640px]"
               >
                 <div className="mx-auto flex max-w-md flex-col items-center justify-center lg:max-w-full">
-                  <div className="mb-3 md:mb-4"><Store className="size-12" strokeWidth={1.5} /></div>
+                  <div className="mb-4 w-full overflow-hidden rounded-2xl">
+                    <Image src="/images/Parceiro.png" width={600} height={400} className="w-full h-auto object-cover" alt="iFood partner restaurant" quality={90} />
+                  </div>
                   <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
                     iFood Partner Restaurants
                   </h3>
@@ -135,7 +141,9 @@ export function Layout518() {
                 className="flex border border-border-primary p-8 text-center lg:max-w-[640px]"
               >
                 <div className="mx-auto flex max-w-md flex-col items-center justify-center lg:max-w-full">
-                  <div className="mb-3 md:mb-4"><ShoppingCart className="size-12" strokeWidth={1.5} /></div>
+                  <div className="mb-4 w-full overflow-hidden rounded-2xl">
+                    <Image src="/images/Cliente.png" width={600} height={400} className="w-full h-auto object-cover" alt="End customer" quality={90} />
+                  </div>
                   <h3 className="mb-3 text-4xl font-bold leading-[1.2] md:mb-4 md:text-5xl lg:text-6xl">
                     Partner's Customers
                   </h3>

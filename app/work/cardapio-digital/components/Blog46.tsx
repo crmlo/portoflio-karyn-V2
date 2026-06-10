@@ -19,7 +19,7 @@ export function Blog46() {
           <div className="flex size-full flex-col items-start justify-start text-start">
             <div className="mb-6 w-full">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/V1.png"
                 width={800}
                 height={450}
                 alt="V1 product"
@@ -37,7 +37,7 @@ export function Blog46() {
           <div className="flex size-full flex-col items-start justify-start text-start">
             <div className="mb-6 w-full">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/V2.png"
                 width={800}
                 height={450}
                 alt="V2 product"
