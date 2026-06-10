@@ -27,12 +27,12 @@ export function Blog46() {
                 quality={90}
               />
             </div>
-            <h2 className="mb-2 text-xl font-bold md:text-2xl">
+            <p className="mb-2 text-xl font-bold md:text-2xl">
               The V1 I inherited covered the core ordering flow: menu browsing,
               cart, and basic checkout. What the research made clear was how
               much was missing for restaurants to actually run their business
               through it.
-            </h2>
+            </p>
           </div>
           <div className="flex size-full flex-col items-start justify-start text-start">
             <div className="mb-6 w-full">
@@ -45,7 +45,7 @@ export function Blog46() {
                 quality={90}
               />
             </div>
-            <h2 className="mb-2 text-xl font-bold md:text-2xl">
+            <p className="mb-2 text-xl font-bold md:text-2xl">
               The V2 we built from those findings was a substantially
               different product. New flows included address handling and
               pickup options, a full catalog and checkout redesign, payment
@@ -53,7 +53,7 @@ export function Blog46() {
               authentication, order tracking, and a series of UX improvements
               flagged in the heuristic analysis. It wasn't an iteration. It
               was a rebuild grounded in what we now knew.
-            </h2>
+            </p>
           </div>
         </div>
       </div>
