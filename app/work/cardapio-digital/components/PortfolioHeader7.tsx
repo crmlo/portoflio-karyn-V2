@@ -41,7 +41,7 @@ export function PortfolioHeader7() {
             </div>
             <div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">Role</h3>
-              <p>Product Designer, UX Designer.</p>
+              <p>Product Designer, UX Research</p>
             </div>
             <div>
               <h3 className="mb-2 text-md font-bold leading-[1.4] md:text-xl">Tools</h3>
