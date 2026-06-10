@@ -4,7 +4,7 @@ import React from "react";
 
 export function Layout47() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="bg-[#F3F5FF] px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-x-12 md:gap-y-8 lg:gap-x-20">
           <div>

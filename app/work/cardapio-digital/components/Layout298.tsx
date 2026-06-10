@@ -5,7 +5,7 @@ import { BarChart2, MessageSquare, Monitor, Users } from "lucide-react";
 
 export function Layout298() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="bg-[#F3F5FF] px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-start">
           <div className="mx-auto mb-12 max-w-lg md:mb-18 lg:mb-20">

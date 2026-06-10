@@ -4,18 +4,18 @@ import React from "react";
 
 export function Layout65() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="bg-black px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:gap-x-12 lg:gap-x-20">
           <div>
-            <p className="mb-3 font-semibold md:mb-4">The problem that research uncovered</p>
-            <h2 className="text-5xl font-bold md:text-7xl lg:text-8xl">
+            <p className="mb-3 font-semibold text-white/60 md:mb-4">The problem that research uncovered</p>
+            <h2 className="text-5xl font-bold text-white md:text-7xl lg:text-8xl">
               The product launched. Three months later, we still didn't know why
               it wasn't working.
             </h2>
           </div>
           <div>
-            <p className="mb-5 md:mb-6 md:text-md">
+            <p className="mb-5 text-white/80 md:mb-6 md:text-md">
               The launch happened on schedule. But three months in, the numbers
               were well below expectations. We had 12k active restaurants and
               172k orders placed, against a goal of 200k orders by that point,
