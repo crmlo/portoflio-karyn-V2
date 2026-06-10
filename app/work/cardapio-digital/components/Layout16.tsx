@@ -13,19 +13,26 @@ export function Layout16() {
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               The fastest fix wasn't a feature, it was a guide.
             </h2>
-            <p className="mb-5 text-base md:mb-6 md:text-md">
-              A lot of the friction we'd uncovered wasn't about missing
-              functionality; it was about understanding. Restaurants didn't know
-              what the product was, that it was free, or how to promote it to
-              their own customers. I proposed an educational guide built
-              directly from the questions collected in the qualitative
-              interviews. The PM was skeptical, so I offered to build it on my
-              own time. It launched at a partner event focused on promoting and
-              explaining the product, and landed well. After that, it wasn't a
-              one-off. The guide was incorporated into ongoing communications
-              with partner restaurants and made available directly in the
-              partner portal.
-            </p>
+            <div className="flex flex-col gap-4">
+              <p className="text-base md:text-md">
+                A lot of the friction we'd uncovered wasn't about missing
+                functionality; it was about understanding. Restaurants didn't
+                know what the product was, that it was free, or how to promote
+                it to their own customers.
+              </p>
+              <p className="text-base md:text-md">
+                I proposed an educational guide built directly from the
+                questions collected in the qualitative interviews. The PM was
+                skeptical, so I offered to build it on my own time. It launched
+                at a partner event focused on promoting and explaining the
+                product, and landed well.
+              </p>
+              <p className="text-base md:text-md">
+                After that, it wasn't a one-off. The guide was incorporated
+                into ongoing communications with partner restaurants and made
+                available directly in the partner portal.
+              </p>
+            </div>
           </div>
           <div>
             <Image
