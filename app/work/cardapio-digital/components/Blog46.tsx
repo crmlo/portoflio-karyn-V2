@@ -27,7 +27,7 @@ export function Blog46() {
                 quality={90}
               />
             </div>
-            <p className="mb-2 text-xl font-bold md:text-2xl">
+            <p className="mb-2 md:text-md">
               The V1 I inherited covered the core ordering flow: menu browsing,
               cart, and basic checkout. What the research made clear was how
               much was missing for restaurants to actually run their business
@@ -45,7 +45,7 @@ export function Blog46() {
                 quality={90}
               />
             </div>
-            <p className="mb-2 text-xl font-bold md:text-2xl">
+            <p className="mb-2 md:text-md">
               The V2 we built from those findings was a substantially
               different product. New flows included address handling and
               pickup options, a full catalog and checkout redesign, payment
