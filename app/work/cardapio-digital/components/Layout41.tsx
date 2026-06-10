@@ -14,12 +14,14 @@ export function Layout41() {
               properly.
             </h2>
           </div>
-          <div>
+          <div className="flex flex-col gap-4">
             <p className="md:text-md">
               The month we spent making calls and sending messages before the
               research wasn't wasted, it showed us that informal outreach had a
               ceiling. You can learn a lot from talking to people, but
               structured research gives you something you can act on at scale.
+            </p>
+            <p className="md:text-md">
               The findings didn't just answer our questions. They gave the whole
               team a shared language for what to prioritize and why. The other
               thing I carry from this project: education is a product decision.
