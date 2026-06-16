@@ -15,16 +15,18 @@ export function Layout10() {
               We didn't ask what data they wanted. We figured out what decisions
               they needed to make.
             </h2>
-            <p className="mb-6 md:mb-8 md:text-md">
+            <p className="mb-4 md:text-md">
               Rather than building a configurable BI tool and letting managers
               choose their own metrics, we took an opinionated approach: we
               defined the data that mattered, organized it into themes, and
-              delivered it in a way that was already interpreted. This required
-              three sources of knowledge working together: the CS team, who
-              understood what managers actually struggled with; an internal
-              researcher with academic and market expertise in healthcare
-              metrics; and the managers themselves, who validated what we built
-              and pushed back where it didn't fit their reality.
+              delivered it in a way that was already interpreted.
+            </p>
+            <p className="mb-6 md:mb-8 md:text-md">
+              This required three sources of knowledge working together: the
+              CS team, who understood what managers actually struggled with;
+              an internal researcher with academic and market expertise in
+              healthcare metrics; and the managers themselves, who validated
+              what we built and pushed back where it didn't fit their reality.
             </p>
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div className="flex">

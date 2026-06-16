@@ -15,12 +15,15 @@ export function Content18() {
           </div>
           <div className="flex flex-col gap-4">
             <p className="md:text-md">
-              Compass was structured around 11 use cases, each mapping a cluster
-              of related metrics and indicators. Managers could navigate between
-              high-level overviews and drill into specific dimensions without
-              losing context. The product was designed to serve two modes of
-              work: a quick daily check-in and a deep analytical session, both
-              in the same interface.
+              Compass was structured around 11 use cases, each mapping a
+              cluster of related metrics and indicators. Managers could
+              navigate between high-level overviews and drill into specific
+              dimensions without losing context.
+            </p>
+            <p className="md:text-md">
+              The product was designed to serve two modes of work: a quick
+              daily check-in and a deep analytical session, both in the same
+              interface.
             </p>
             <p className="md:text-md">
               Every visualization carried status signals — not just numbers, but

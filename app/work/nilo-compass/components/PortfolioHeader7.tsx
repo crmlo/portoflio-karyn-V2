@@ -13,10 +13,12 @@ export function PortfolioHeader7() {
               From raw data chaos to clarity: giving healthcare managers the
               data they didn't know they needed.
             </h1>
-            <p className="md:text-md">
+            <p className="mb-4 md:text-md">
               Nilo already had a strong product for patient navigation and
               engagement. What was missing was a way for healthcare managers to
               understand what was actually happening in their operations.
+            </p>
+            <p className="md:text-md">
               Compass was built to fill that gap: a structured, opinionated
               analytics product that turned a flood of ad-hoc data requests into
               a tool managers could use to make decisions and prove their own
@@ -24,13 +26,10 @@ export function PortfolioHeader7() {
             </p>
             <ul className="mt-5 flex flex-wrap gap-2 md:mt-6">
               <li className="flex list-none">
-                <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">Product design</span>
+                <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">Information Architecture</span>
               </li>
               <li className="flex list-none">
                 <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">Data visualization</span>
-              </li>
-              <li className="flex list-none">
-                <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">Healthcare</span>
               </li>
               <li className="flex list-none">
                 <span className="bg-background-secondary px-2 py-1 text-sm font-semibold">End-to-end design</span>

@@ -13,13 +13,15 @@ export function Layout306() {
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
               Key features included
             </h2>
-            <p className="md:text-md">
+            <p className="mb-4 md:text-md">
               I worked side by side with the engineering team to ensure every
-              experience I designed was technically feasible. This close
-              collaboration allowed us to validate technical constraints early
-              and refine solutions together. Leveraging the company's design
-              system, I created components tailored to this product's unique
-              needs.
+              experience I designed was technically feasible.
+            </p>
+            <p className="md:text-md">
+              This close collaboration allowed us to validate technical
+              constraints early and refine solutions together. Leveraging the
+              company's design system, I created components tailored to this
+              product's unique needs.
             </p>
           </div>
         </div>

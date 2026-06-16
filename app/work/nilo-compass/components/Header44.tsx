@@ -9,8 +9,9 @@ export function Header44() {
         <div className="w-full max-w-lg">
           <p className="mb-3 font-semibold text-black md:mb-4">Next</p>
           <h1 className="mb-5 text-6xl font-bold text-black md:mb-6 md:text-9xl lg:text-10xl">
-            Want to see the full research findings and the V2 designs? Let's
-            talk.
+            This is a preview. The complete case includes the co-creation
+            sessions, validation findings, and the final screens in detail.
+            Want to see the full story? Let's talk.
           </h1>
         </div>
       </div>
