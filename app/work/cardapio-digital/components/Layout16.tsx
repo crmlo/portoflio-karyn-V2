@@ -36,10 +36,18 @@ export function Layout16() {
           </div>
           <div>
             <Image
+              src="/images/Guia-poster.png"
+              width={800}
+              height={600}
+              className="w-full h-auto rounded-2xl object-cover md:hidden"
+              alt="Partner educational guide"
+              quality={90}
+            />
+            <Image
               src="/images/Guia.gif"
               width={800}
               height={600}
-              className="w-full h-auto rounded-2xl object-cover"
+              className="hidden w-full h-auto rounded-2xl object-cover md:block"
               alt="Partner educational guide"
               quality={90}
               unoptimized

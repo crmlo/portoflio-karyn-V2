@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@relume_io/relume-ui";
 import React from "react";
 
 export function Header1() {
@@ -18,10 +17,6 @@ export function Header1() {
               deliver experiences that work for users and drive real results for
               businesses.
             </p>
-            <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button title="Work">Work</Button>
-              <Button title="About" variant="secondary">About</Button>
-            </div>
           </div>
           <div className="flex justify-center">
             <div className="aspect-square w-full max-w-sm overflow-hidden rounded-full">

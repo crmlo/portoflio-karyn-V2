@@ -92,7 +92,7 @@ export function Portfolio16() {
             <div>
               <a href="/work/nilo-compass" className="flex aspect-[4/3] w-full overflow-hidden rounded-2xl">
                 <img
-                  src="/images/Compass_thumblr.jpg"
+                  src="/images/nilo-compass.jpg"
                   alt="Nilo Compass"
                   className="w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
