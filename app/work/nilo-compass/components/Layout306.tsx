@@ -27,7 +27,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/metricas.png"
+                src="/images/big numbers.jpg"
                 width={400}
                 height={250}
                 alt="Visual status signals"
@@ -85,7 +85,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/big numbers.jpg"
+                src="/images/CasodeUso.jpg"
                 width={400}
                 height={250}
                 alt="Key numbers by theme"

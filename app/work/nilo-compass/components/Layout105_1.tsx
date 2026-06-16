@@ -36,7 +36,7 @@ export function Layout105_1() {
           </div>
         </div>
         <Image
-          src="/images/Upsell.png"
+          src="/images/Granularidade.png"
           width={1600}
           height={900}
           className="w-full h-auto rounded-2xl object-cover"

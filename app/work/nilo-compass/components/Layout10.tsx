@@ -64,7 +64,7 @@ export function Layout10() {
           </div>
           <div>
             <Image
-              src="/images/CasodeUso.jpg"
+              src="/images/coriacao.png"
               width={800}
               height={600}
               className="w-full h-auto rounded-2xl object-cover"

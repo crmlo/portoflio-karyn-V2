@@ -58,7 +58,7 @@ export function PortfolioHeader7() {
         </div>
         <div>
           <Image
-            src="/images/Compass_thumblr.jpg"
+            src="/images/nilo-compass.jpg"
             alt="Nilo Compass case study hero"
             width={1600}
             height={900}
