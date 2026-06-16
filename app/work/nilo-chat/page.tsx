@@ -1,4 +1,4 @@
-import { Navbar3 } from "./components/Navbar3";
+import { Navbar } from "../../components/shared/Navbar";
 import { PortfolioHeader7 } from "./components/PortfolioHeader7";
 import { Layout1 } from "./components/Layout1";
 import { Content2 } from "./components/Content2";
@@ -21,25 +21,27 @@ import { Footer } from "../../components/shared/Footer";
 export default function NiloChatPage() {
   return (
     <>
-      <Navbar3 />
-      <PortfolioHeader7 />
-      <Layout1 />
-      <Content2 />
-      <Layout35 />
-      <Layout65 />
-      <Layout241 />
-      <Layout1_1 />
-      <Layout1_2 />
-      <Layout149 />
-      <Layout149_1 />
-      <Layout149_2 />
-      <Layout149_3 />
-      <Layout302 />
-      <Layout65_1 />
-      <Stats17 />
-      <Testimonial1 />
-      <Header44 />
-      <Footer />
+      <Navbar />
+      <main className="pt-16 md:pt-[72px]">
+        <PortfolioHeader7 />
+        <Layout1 />
+        <Content2 />
+        <Layout35 />
+        <Layout65 />
+        <Layout241 />
+        <Layout1_1 />
+        <Layout1_2 />
+        <Layout149 />
+        <Layout149_1 />
+        <Layout149_2 />
+        <Layout149_3 />
+        <Layout302 />
+        <Layout65_1 />
+        <Stats17 />
+        <Testimonial1 />
+        <Header44 />
+        <Footer />
+      </main>
     </>
   );
 }

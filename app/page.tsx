@@ -1,4 +1,4 @@
-import { Navbar3 } from "./components/home/Navbar3";
+import { Navbar } from "./components/shared/Navbar";
 import { Header1 } from "./components/home/Header1";
 import { Layout241 } from "./components/home/Layout241";
 import { Header64 } from "./components/home/Header64";
@@ -12,7 +12,7 @@ import { Footer } from "./components/shared/Footer";
 export default function Home() {
   return (
     <>
-      <Navbar3 />
+      <Navbar />
       <main className="pt-16 md:pt-[72px]">
         <Header1 />
         <Layout241 />

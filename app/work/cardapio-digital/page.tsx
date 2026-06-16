@@ -1,4 +1,4 @@
-import { Navbar3 } from "./components/Navbar3";
+import { Navbar } from "../../components/shared/Navbar";
 import { PortfolioHeader7 } from "./components/PortfolioHeader7";
 import { Layout13 } from "./components/Layout13";
 import { Layout518 } from "./components/Layout518";
@@ -22,7 +22,7 @@ import { Footer } from "../../components/shared/Footer";
 export default function Page() {
   return (
     <>
-      <Navbar3 />
+      <Navbar />
       <main className="pt-16 md:pt-[72px]">
         <PortfolioHeader7 />
         <Layout13 />
