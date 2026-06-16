@@ -27,7 +27,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/metricas.png"
                 width={400}
                 height={250}
                 alt="Visual status signals"
@@ -46,7 +46,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/Export.jpg"
                 width={400}
                 height={250}
                 alt="Exportable reports"
@@ -65,7 +65,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/Filtros.jpg"
                 width={400}
                 height={250}
                 alt="Flexible filtering"
@@ -85,7 +85,7 @@ export function Layout306() {
           <div>
             <div className="mb-5 md:mb-6">
               <Image
-                src="/images/placeholder.jpg"
+                src="/images/big numbers.jpg"
                 width={400}
                 height={250}
                 alt="Key numbers by theme"

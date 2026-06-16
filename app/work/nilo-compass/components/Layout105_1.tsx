@@ -36,11 +36,11 @@ export function Layout105_1() {
           </div>
         </div>
         <Image
-          src="/images/placeholder.jpg"
+          src="/images/Upsell.png"
           width={1600}
           height={900}
           className="w-full h-auto rounded-2xl object-cover"
-          alt="Module preview design"
+          alt="Inactive module upsell design"
           quality={90}
         />
       </div>

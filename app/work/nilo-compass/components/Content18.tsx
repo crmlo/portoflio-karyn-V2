@@ -33,11 +33,11 @@ export function Content18() {
         </div>
         <div>
           <Image
-            src="/images/placeholder.jpg"
+            src="/images/Granularidade.png"
             width={1600}
             height={900}
             className="w-full h-auto rounded-2xl object-cover"
-            alt="Compass interface overview"
+            alt="Compass granularity and detail view"
             quality={90}
           />
         </div>

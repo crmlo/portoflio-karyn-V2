@@ -64,11 +64,11 @@ export function Layout10() {
           </div>
           <div>
             <Image
-              src="/images/placeholder.jpg"
+              src="/images/CasodeUso.jpg"
               width={800}
               height={600}
               className="w-full h-auto rounded-2xl object-cover"
-              alt="Approach overview"
+              alt="Compass use cases"
               quality={90}
             />
           </div>
