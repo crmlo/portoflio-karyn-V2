@@ -6,6 +6,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "../../context/LanguageContext";
 
 const workLinks = [
   { href: "/work/nilo-chat", label: "Nilo ChatAI" },
@@ -38,6 +39,7 @@ export function Navbar() {
   const isVisible = useScrollVisibility();
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
@@ -47,6 +49,42 @@ export function Navbar() {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
     closeMobileMenu();
   };
+
+  const contactLabel = language === "pt" ? "Contato" : "Contact";
+
+  const LanguageToggle = ({ className }: { className?: string }) => (
+    <div
+      className={clsx(
+        "flex items-center gap-1 rounded-full border border-border-primary p-1",
+        className,
+      )}
+    >
+      <button
+        type="button"
+        onClick={() => setLanguage("pt")}
+        aria-label="Português"
+        aria-pressed={language === "pt"}
+        className={clsx(
+          "flex size-7 items-center justify-center rounded-full text-base transition-opacity",
+          language === "pt" ? "opacity-100" : "opacity-40 hover:opacity-70",
+        )}
+      >
+        🇧🇷
+      </button>
+      <button
+        type="button"
+        onClick={() => setLanguage("en")}
+        aria-label="English"
+        aria-pressed={language === "en"}
+        className={clsx(
+          "flex size-7 items-center justify-center rounded-full text-base transition-opacity",
+          language === "en" ? "opacity-100" : "opacity-40 hover:opacity-70",
+        )}
+      >
+        🇺🇸
+      </button>
+    </div>
+  );
 
   return (
     <header
@@ -85,22 +123,26 @@ export function Navbar() {
                 );
               })}
             </nav>
+            <LanguageToggle />
             <a
               href="#contact"
               onClick={handleContactClick}
               className="inline-flex items-center justify-center rounded-full bg-[#8AA0FF] px-6 py-2 font-['Inter'] text-sm font-semibold text-black transition hover:opacity-90"
             >
-              Contact
+              {contactLabel}
             </a>
           </div>
 
-          <button
-            className="flex size-10 items-center justify-center lg:hidden"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
-          </button>
+          <div className="flex items-center gap-x-3 lg:hidden">
+            <LanguageToggle />
+            <button
+              className="flex size-10 items-center justify-center"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -137,7 +179,7 @@ export function Navbar() {
                 onClick={handleContactClick}
                 className="inline-flex items-center justify-center rounded-full bg-[#8AA0FF] px-6 py-2 font-['Inter'] text-sm font-semibold text-black transition hover:opacity-90"
               >
-                Contact
+                {contactLabel}
               </a>
             </nav>
           </motion.div>

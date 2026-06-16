@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
+import { useLanguage } from "../../context/LanguageContext";
 
 const testimonials = [
   {
@@ -40,7 +41,20 @@ const ITEMS_PER_PAGE = 2;
 const totalPages = Math.ceil(testimonials.length / ITEMS_PER_PAGE);
 
 export function Testimonials() {
+  const { language } = useLanguage();
   const [page, setPage] = useState(0);
+  const t =
+    language === "pt"
+      ? {
+          eyebrow: "Depoimentos",
+          heading: "O que dizem sobre trabalhar comigo.",
+          body: "Diretamente das pessoas com quem construí alguns destes projetos.",
+        }
+      : {
+          eyebrow: "Testimonials",
+          heading: "What they say about working with me.",
+          body: "Straight from the people I've built with.",
+        };
 
   const prev = () => setPage((p) => (p - 1 + totalPages) % totalPages);
   const next = () => setPage((p) => (p + 1) % totalPages);
@@ -54,11 +68,11 @@ export function Testimonials() {
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
-          <p className="mb-3 font-semibold md:mb-4">Testimonials</p>
+          <p className="mb-3 font-semibold md:mb-4">{t.eyebrow}</p>
           <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-            What they say about working with me.
+            {t.heading}
           </h2>
-          <p className="md:text-md">Straight from the people I've built with.</p>
+          <p className="md:text-md">{t.body}</p>
         </div>
 
         <div className="overflow-hidden">

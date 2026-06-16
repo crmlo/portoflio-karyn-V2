@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 const logos = [
   { src: "/images/Nilo.png", alt: "Nilo" },
@@ -14,11 +15,13 @@ const logos = [
 ];
 
 export function Logo3() {
+  const { language } = useLanguage();
+
   return (
     <section className="overflow-hidden py-12 md:py-16 lg:py-20" style={{ backgroundColor: "#F3F5FF" }}>
       <div className="container mb-8 w-full max-w-lg px-[5%] md:mb-10 lg:mb-12">
         <h2 className="text-center text-base font-bold leading-[1.2] md:text-md md:leading-[1.2]">
-          Companies I've worked with
+          {language === "pt" ? "Empresas com quem já trabalhei" : "Companies I've worked with"}
         </h2>
       </div>
       <div className="flex items-center pt-7 md:pt-0">

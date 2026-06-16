@@ -2,18 +2,33 @@
 
 import React from "react";
 import { BiEnvelope, BiLogoLinkedin, BiPhone } from "react-icons/bi";
+import { useLanguage } from "../../context/LanguageContext";
 
 export function Footer() {
+  const { language } = useLanguage();
+  const t =
+    language === "pt"
+      ? {
+          eyebrow: "Entrar em contato",
+          heading: "Entrar em contato",
+          body: "Respondo a todas as mensagens.",
+        }
+      : {
+          eyebrow: "Reach out",
+          heading: "Get in touch",
+          body: "I respond to every message.",
+        };
+
   return (
     <footer id="contact" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="grid auto-cols-fr grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-[1fr_.75fr] md:gap-x-20 md:gap-y-16">
           <div className="max-w-lg">
-            <p className="mb-3 font-semibold md:mb-4">Reach out</p>
+            <p className="mb-3 font-semibold md:mb-4">{t.eyebrow}</p>
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Get in touch
+              {t.heading}
             </h2>
-            <p className="md:text-md">I respond to every message.</p>
+            <p className="md:text-md">{t.body}</p>
           </div>
           <div className="flex flex-col">
             <div className="grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-6 py-2">

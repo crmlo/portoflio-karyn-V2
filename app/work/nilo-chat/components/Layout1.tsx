@@ -2,33 +2,42 @@
 
 import React from "react";
 import Image from "next/image";
+import { useLanguage } from "../../../context/LanguageContext";
 
 export function Layout1() {
+  const { language } = useLanguage();
+  const t =
+    language === "pt"
+      ? {
+          eyebrow: "Contexto",
+          heading:
+            "A Nilo é a infraestrutura para saúde e o Chat é por onde tudo passa.",
+          body1:
+            "A Nilo é uma plataforma SaaS que ajuda hospitais, clínicas e operadoras de saúde a oferecer cuidado contínuo e personalizado. Com mais de 3 milhões de pacientes e 6.000 profissionais de saúde na plataforma, atende clientes como Grupo Fleury, Hospital Albert Einstein, Unimed e Porto Saúde.",
+          body2:
+            "A plataforma tem quatro módulos: captação e engajamento, navegação de cuidado, dados e analytics, e agentes de IA. O Chat está no centro de todos eles — é a interface por onde os dados de saúde de milhões de pacientes fluem todos os dias. Sem ele, navegação de cuidado e campanhas de engajamento seriam quase impossíveis de entregar.",
+        }
+      : {
+          eyebrow: "Context",
+          heading:
+            "Nilo is infrastructure for healthcare and Chat is where everything runs through.",
+          body1:
+            "Nilo is a SaaS platform helping hospitals, clinics, and health operators deliver continuous, personalized care. With over 3 million patients and 6,000 healthcare professionals on the platform, it serves clients like Grupo Fleury, Hospital Albert Einstein, Unimed, and Porto Saúde.",
+          body2:
+            "The platform has four modules: acquisition & engagement, care navigation, data & analytics, and AI agents. Chat sits at the center of all of them — it's the interface through which millions of patients' health data flows every single day. Without it, care navigation and engagement campaigns would be nearly impossible to deliver.",
+        };
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <p className="mb-3 font-semibold md:mb-4">Context</p>
+            <p className="mb-3 font-semibold md:mb-4">{t.eyebrow}</p>
             <h1 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
-              Nilo is infrastructure for healthcare and Chat is where everything
-              runs through.
+              {t.heading}
             </h1>
-            <p className="md:text-md">
-              Nilo is a SaaS platform helping hospitals, clinics, and health
-              operators deliver continuous, personalized care. With over 3
-              million patients and 6,000 healthcare professionals on the
-              platform, it serves clients like Grupo Fleury, Hospital Albert
-              Einstein, Unimed, and Porto Saúde.
-            </p>
-            <p className="mt-4 md:text-md">
-              The platform has four modules:
-              acquisition & engagement, care navigation, data & analytics, and
-              AI agents. Chat sits at the center of all of them — it's the
-              interface through which millions of patients' health data flows
-              every single day. Without it, care navigation and engagement
-              campaigns would be nearly impossible to deliver.
-            </p>
+            <p className="md:text-md">{t.body1}</p>
+            <p className="mt-4 md:text-md">{t.body2}</p>
           </div>
           <div>
             <Image
