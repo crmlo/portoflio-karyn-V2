@@ -10,7 +10,7 @@ export function Layout306() {
     language === "pt"
       ? {
           eyebrow: "Funcionalidades",
-          heading: "As principais funcionalidades incluíam",
+          heading: "Principais funcionalidades",
           body1:
             "Trabalhei lado a lado com o time de engenharia para garantir que cada experiência que desenhei fosse tecnicamente viável.",
           body2:

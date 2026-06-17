@@ -6,34 +6,49 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const testimonials = [
   {
-    quote:
+    quotePt:
+      "A Karyn é a designer que realmente se importa com o usuário. Seu trabalho é guiado por necessidades reais e orientado ao usuário final, com uma preocupação genuína em entregar a melhor experiência e o melhor impacto possíveis. Ela conduz testes, pesquisas, entrevistas e traz muitos insumos para o time.",
+    quoteEn:
       "Karyn is the designer who genuinely cares about the user. Her work is guided by real needs and oriented to the final user, with latent concern in delivering the best real experience and impact. She conducts tests, surveys, interviews, and brings a lot of inputs for the team.",
     author: "Eduardo Duccigne",
-    context: "Design Manager, Nilo",
+    contextPt: "Gerente de Design, Nilo",
+    contextEn: "Design Manager, Nilo",
   },
   {
-    quote:
+    quotePt:
+      "Trabalhando com a Karyn em jornadas complexas de cuidado oncológico, fiquei consistentemente impressionado com a rapidez com que ela entendia as nuances clínicas e as traduzia em soluções de design que realmente faziam sentido para os fluxos de trabalho reais que estávamos mapeando juntos.",
+    quoteEn:
       "Working with Karyn on complex oncological care journeys, I was consistently impressed by how quickly she grasped the clinical nuances and translated them into design solutions that actually made sense for the real workflows we were mapping together.",
     author: "Marcos Adriano Jota",
-    context: "National Director, Brazilian Society of Surgical Oncology · Advisor, Nilo",
+    contextPt: "Diretor Nacional, Sociedade Brasileira de Cirurgia Oncológica · Conselheiro, Nilo",
+    contextEn: "National Director, Brazilian Society of Surgical Oncology · Advisor, Nilo",
   },
   {
-    quote:
+    quotePt:
+      "A Karyn aborda cada projeto com um nível de cuidado raro de se ver. Antes de qualquer tela ser desenhada, ela já mapeou o contexto do usuário, identificou os casos de borda e pensou no copy e na validação. Esse rigor se mantém até a entrega, e isso fica evidente na qualidade do que vai ao ar.",
+    quoteEn:
       "Karyn approaches every project with a level of thoroughness that's rare. Before a single screen gets designed, she's already mapped the user context, identified the edge cases, and thought through the copy and validation. That rigor carries all the way through to delivery — and it shows in the quality of what ships.",
     author: "Sofia Oliveira",
-    context: "Product Manager, Nilo",
+    contextPt: "Gerente de Produto, Nilo",
+    contextEn: "Product Manager, Nilo",
   },
   {
-    quote:
+    quotePt:
+      "O trabalho da Karyn é extremamente bem documentado. Você consegue olhar o arquivo do Figma que ela cria e saber exatamente o que acontece em cada situação. Cada fluxo é muito bem descrito.",
+    quoteEn:
       "Karyn's work is extremely well documented. You can look at the Figma file she creates and know exactly what happens in each situation. Each flow is very well described.",
     author: "Lucas Gomide",
-    context: "Senior Software Engineer, Nilo",
+    contextPt: "Engenheiro de Software Senior, Nilo",
+    contextEn: "Senior Software Engineer, Nilo",
   },
   {
-    quote:
+    quotePt:
+      "Ela mostrou muito interesse no Compass, um projeto grande e complexo. Não teve medo de encará-lo de frente e organizar sessões de co-criação complexas.",
+    quoteEn:
       "She showed a lot of interest in the Compass — a large and complex project. She was not afraid to face it head-on and organize complex co-creation sessions.",
     author: "Rafael Alves",
-    context: "Head de Produto, Nilo",
+    contextPt: "Head de Produto, Nilo",
+    contextEn: "Head de Produto, Nilo",
   },
 ];
 
@@ -77,17 +92,19 @@ export function Testimonials() {
 
         <div className="overflow-hidden">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-x-8 lg:gap-x-12" style={{ minHeight: "350px" }}>
-          {visible.map((t, i) => (
+          {visible.map((item, i) => (
             <div
               key={i}
               className="flex h-full flex-col border border-border-primary p-8 md:p-10" style={{ minHeight: "350px" }}
             >
               <blockquote className="flex-1 text-md font-bold leading-[1.4]">
-                "{t.quote}"
+                "{language === "pt" ? item.quotePt : item.quoteEn}"
               </blockquote>
               <div className="mt-6 border-t border-border-primary pt-6">
-                <p className="font-semibold">{t.author}</p>
-                <p className="text-sm text-neutral-500">{t.context}</p>
+                <p className="font-semibold">{item.author}</p>
+                <p className="text-sm text-neutral-500">
+                  {language === "pt" ? item.contextPt : item.contextEn}
+                </p>
               </div>
             </div>
           ))}

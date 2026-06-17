@@ -17,12 +17,12 @@ export function PortfolioHeader7() {
           tag3: "Designer End-to-end",
           companyLabel: "Empresa",
           company: "iFood",
-          durationLabel: "Período",
-          duration: "Abr 2021–Mar 2022",
+          durationLabel: "Duração",
+          duration: "10 meses",
           roleLabel: "Papel",
-          role: "Designer End-to-end",
+          role: "Product Designer, UX Research",
           toolsLabel: "Ferramentas",
-          tools: "Figma, Amplitude, Hotjar.",
+          tools: "Figma, Amplitude, Hotjar, Survey Monkey.",
         }
       : {
           heading:
