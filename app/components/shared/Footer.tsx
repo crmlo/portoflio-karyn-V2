@@ -9,9 +9,9 @@ export function Footer() {
   const t =
     language === "pt"
       ? {
-          eyebrow: "Entrar em contato",
-          heading: "Entrar em contato",
-          body: "Respondo a todas as mensagens.",
+          eyebrow: "Contato",
+          heading: "Vamos conversar?",
+          body: "Respondo todas as mensagens.",
         }
       : {
           eyebrow: "Reach out",
